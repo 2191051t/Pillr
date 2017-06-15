@@ -1,1 +1,1 @@
-# Prescriptions
+Getting started
