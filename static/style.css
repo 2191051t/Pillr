@@ -1,0 +1,36 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    color: #545454;
+    font-size: 24px;
+}
+
+h1 {
+    margin: 15px;
+}
+
+span {
+    display: block;
+    margin-top: 30px;
+}
+
+div#inputbox {
+    margin: 15px;
+}
+
+input[type="text"], input[type="number"] {
+    font-size: 24px;
+    padding-left: 15px;
+    font-weight: 300;
+}
+
+input[type="button"] {
+    display: block;
+    font-size: 24px;
+    border: 1px solid gray;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 15px;
+    width: 100%;
+}

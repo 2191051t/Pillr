@@ -24,7 +24,7 @@ def signup_user(id):
 	if len(q) == 0:
 		db.insert('users',id=id)
 		# send to welcome page
-		return 'welcome!'
+		return render_template('start.html')
 	else:
 		# send to current page
 		return 'not done'
