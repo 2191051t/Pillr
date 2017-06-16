@@ -4,6 +4,4 @@ gevent==1.1.2
 gunicorn==19.4.5
 # Manage db
 web.py==0.37
-# Requests
-requests==2.10.0
-grequests==0.3.0
+psycopg2==2.7.1
