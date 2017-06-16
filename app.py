@@ -1,6 +1,5 @@
 from flask import Flask, url_for, render_template
-from web.py import web
-
+import web
 #db = web.database(dbn='postgres', db='dbname', user='username', pw='password')
 
 
