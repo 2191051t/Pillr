@@ -16,13 +16,19 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello World!"
+	return "Hello World!"
 
-@app.route('/entry/<int:id>')
+@app.route('/user/<int:id>')
 def signup_user(id):
-    # show signup page and have unique id
-    return render_template('signup.html', id=id)
+	q = list(db.select('users',where='id='+str(id)))
+	if len(q) == 0:
+		db.insert('users',id=id)
+		# send to welcome page
+		return 'welcome!'
+	else:
+		# send to current page
+		return 'not done'
 
 if __name__ == "__main__":
-    # Bind to PORT if defined, otherwise default to 5000.
-    app.run(debug=True)
+	# Bind to PORT if defined, otherwise default to 5000.
+	app.run(debug=True)
