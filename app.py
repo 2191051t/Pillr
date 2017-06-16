@@ -25,16 +25,7 @@ def hello():
 
 @app.route('/user/<int:id>')
 def signup_user(id):
-<<<<<<< HEAD
-	q = list(db.select('users',where='id='+str(id)))
-	if len(q) == 0:
-		db.insert('users',id=id)
-		# send to welcome page
-		return render_template('start.html')
-	else:
-		# send to current page
-		return 'not done'
-=======
+
     q = list(db.select('users', where='id=' + str(id)))
     if len(q) == 0:
         #db.insert('users', id=id)
@@ -64,7 +55,6 @@ def login(id):
 
 
         return error
->>>>>>> 9249e2f8873756f8ace7304c5b09bf9899776fa4
 
 if __name__ == "__main__":
     # Bind to PORT if defined, otherwise default to 5000.
