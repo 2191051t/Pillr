@@ -18,7 +18,7 @@ app = Flask(__name__)
 def hello():
     return "Hello World!"
 
-@app.route('/signup/<int:id>')
+@app.route('/entry/<int:id>')
 def signup_user(id):
     # show signup page and have unique id
     return render_template('signup.html', id=id)
