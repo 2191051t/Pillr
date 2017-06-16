@@ -6,17 +6,17 @@
 <body>
 
 <h1>Enter Your Prescription</h1>
-
+<form action="/login/{{ id }}" method=post>
 <span>Drug Name</span>
-<input type="text" placeholder="Drug Name" />
+<input type="text" placeholder="Drug Name" name="drugName" />
 
 <span>Dosage</span>
-<input type="text" placeholder="Dosage" />
+<input type="text" placeholder="Dosage" name="dosage"/>
 
 <span>Doses per month</span>
-<input type="number" placeholder="Doses per month" />
+<input type="number" placeholder="Doses per month" name="frequency"/>
 
-<input type="button" value="Save" />
-
+<input type="submit" value="Save" />
+</form>
 </body>
 </html>
